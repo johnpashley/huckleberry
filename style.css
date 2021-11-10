@@ -1,3 +1,17 @@
+:root {
+  --green: hsl(160deg, 100%, 30%);
+
+  --gold-light: hsl(45deg, 100%, 50%);
+  --gold-dark: hsl(45deg, 100%, 40%);
+
+  --black: hsl(0deg, 0%, 0%);
+  --black-10: hsl(0deg, 0%, 10%);
+  --black-30: hsl(0deg, 0%, 30%);
+  --black-40: hsl(0deg, 0%, 40%);
+  --black-60: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +21,64 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-weight: 18px;
 }
 
-/* Add styles here! */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+strong {
+  color: var(--green);
+}
+
+.max-width-wrapper {
+  max-width: 768px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 60%;
+  margin-right: auto;
+  padding: 128px 0 64px 0;
+}
+
+.intro-chunk p {
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: var(--black-60);
+  padding: 64px 0;
+  border-top: 8px solid var(--black-40);
+  height: 100%;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 8px 32px;
+  margin-left: -32px;
+  margin-right: -32px;
+  box-shadow: 0 8px var(--black-40);
+}
+
+.indented-heading {
+  padding: 24px 48px;
+  background-color: var(--gold-light);
+  margin-left: -48px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  width: fit-content;
+  box-shadow: 0 8px var(--gold-dark);
+}
